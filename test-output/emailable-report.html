@@ -8,37 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">124,844</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7,780</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">framework.MavenFrameworkBatch5.LoginTest</td><td><a href="#m0">loginWithValidEmailAndValidPassword</a></td><td rowspan="1">1753461679861</td><td rowspan="1">378</td></tr><tr class="failedodd"><td rowspan="2">framework.MavenFrameworkBatch5.RegisterTest</td><td><a href="#m1">registerWithAllTheDetailAlongWithSubscriptionYes</a></td><td rowspan="1">1753461650138</td><td rowspan="1">1802</td></tr><tr class="failedodd"><td><a href="#m2">registerWithMandatoryDetail</a></td><td rowspan="1">1753461661737</td><td rowspan="1">1678</td></tr><tr class="failedeven"><td rowspan="1">framework.MavenFrameworkBatch5.SearchTest</td><td><a href="#m3">searchWithoutProvidingAnyProduct</a></td><td rowspan="1">1753461629570</td><td rowspan="1">1146</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">framework.MavenFrameworkBatch5.LoginTest</td><td><a href="#m4">loginWithInvalidEmailAndInvalidPassword</a></td><td rowspan="1">1753461709216</td><td rowspan="1">1345</td></tr><tr class="passedeven"><td><a href="#m5">loginWithInvalidEmailAndValidPassword</a></td><td rowspan="1">1753461698721</td><td rowspan="1">1047</td></tr><tr class="passedeven"><td><a href="#m6">loginWithValidEmailAndInvalidPassword</a></td><td rowspan="1">1753461690141</td><td rowspan="1">1276</td></tr><tr class="passedeven"><td><a href="#m7">loginWithoutEmailAndPassword</a></td><td rowspan="1">1753461719768</td><td rowspan="1">905</td></tr><tr class="passedodd"><td rowspan="2">framework.MavenFrameworkBatch5.RegisterTest</td><td><a href="#m8">noFirstNameValidation</a></td><td rowspan="1">1753461639931</td><td rowspan="1">1415</td></tr><tr class="passedodd"><td><a href="#m9">registerWithoutProvidingAnyData</a></td><td rowspan="1">1753461671772</td><td rowspan="1">728</td></tr><tr class="passedeven"><td rowspan="2">framework.MavenFrameworkBatch5.SearchTest</td><td><a href="#m10">searchInvalidProduct</a></td><td rowspan="1">1753461605711</td><td rowspan="1">1450</td></tr><tr class="passedeven"><td><a href="#m11">searchWithValidProduct</a></td><td rowspan="1">1753461619768</td><td rowspan="1">1049</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">framework.MavenFrameworkBatch5.LoginTest</td><td><a href="#m0">loginWithValidEmailAndValidPassword</a></td><td rowspan="1">1785174626348</td><td rowspan="1">1424</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">framework.MavenFrameworkBatch5.LoginTest#loginWithValidEmailAndValidPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Account Login] but found [My Account---]
-	at pageObject.AccountsPage.verifyLoginIsSuccessfullInAccountPage(AccountsPage.java:16)
-	at framework.MavenFrameworkBatch5.LoginTest.loginWithValidEmailAndValidPassword(LoginTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">framework.MavenFrameworkBatch5.RegisterTest#registerWithAllTheDetailAlongWithSubscriptionYes</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: FAIL - Registration has been Failed - success message not displayed expected [Account Has Been Created] but found [Your Account Has Been Created!]
-	at pageObject.RegisterPage.verifyRegistrationSuccessfulTextMessage(RegisterPage.java:62)
-	at framework.MavenFrameworkBatch5.RegisterTest.registerWithAllTheDetailAlongWithSubscriptionYes(RegisterTest.java:66)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">framework.MavenFrameworkBatch5.RegisterTest#registerWithMandatoryDetail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: FAIL - Registration has been Failed - success message not displayed expected [Account Has Been Created] but found [Your Account Has Been Created!]
-	at pageObject.RegisterPage.verifyRegistrationSuccessfulTextMessage(RegisterPage.java:62)
-	at framework.MavenFrameworkBatch5.RegisterTest.registerWithMandatoryDetail(RegisterTest.java:47)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">framework.MavenFrameworkBatch5.SearchTest#searchWithoutProvidingAnyProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
-	at framework.MavenFrameworkBatch5.SearchTest.searchWithoutProvidingAnyProduct(SearchTest.java:51)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">framework.MavenFrameworkBatch5.LoginTest#loginWithInvalidEmailAndInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">framework.MavenFrameworkBatch5.LoginTest#loginWithInvalidEmailAndValidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">framework.MavenFrameworkBatch5.LoginTest#loginWithValidEmailAndInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">framework.MavenFrameworkBatch5.LoginTest#loginWithoutEmailAndPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">framework.MavenFrameworkBatch5.RegisterTest#noFirstNameValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">framework.MavenFrameworkBatch5.RegisterTest#registerWithoutProvidingAnyData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">framework.MavenFrameworkBatch5.SearchTest#searchInvalidProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">framework.MavenFrameworkBatch5.SearchTest#searchWithValidProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">framework.MavenFrameworkBatch5.LoginTest#loginWithValidEmailAndValidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
