@@ -10,3 +10,5 @@ console.log("monday practice")
 console.log("One")
 console.log("Two")
 console.log("Three")
+
+console.log("new code to demonstrate git rebase")
