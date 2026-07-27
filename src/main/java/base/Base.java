@@ -18,11 +18,15 @@ public class Base { //parent
 	public Base() {
 		// Reading data from properties file
 		try {
-			FileInputStream fis = new FileInputStream("G:\\Subhash_Automation _Folder\\Automation\\MavenFrameworkBatch5\\TestData\\config.properties");
+			// Using relative path from project root
+			String filePath = System.getProperty("user.dir") + "/TestData/config.properties";
+			FileInputStream fis = new FileInputStream(filePath);
 			prop = new Properties();
 			prop.load(fis);
 			System.out.println("browser name  = " + prop.getProperty("browserName"));
+			fis.close();
 		} catch (Exception e) {
+			System.out.println("Failed to load properties file. Make sure config.properties exists in TestData folder.");
 			e.printStackTrace();
 		}
 	}
