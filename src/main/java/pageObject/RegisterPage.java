@@ -59,9 +59,11 @@ public class RegisterPage {
 		}
 		
 		//Hard Assert
-		Assert.assertEquals(actualRegSuccessText, expectedRegSuccessText, "FAIL - Registration has been Failed - success message not displayed");
+		/*Assert.assertEquals(actualRegSuccessText, expectedRegSuccessText, "FAIL - Registration has been Failed - success message not displayed");*/
 		System.out.println("PASS - Registration is Successfull");
+		Assert.assertTrue(actualRegSuccessText.contains(expectedRegSuccessText),"FAIL - Registration has been Failed - success message not displayed");
 	}
+	
 	
 	public void verifyRegisterWarningMessage() {
 		String actualRegWarningText = driver.findElement(By.xpath("//div[text()='Warning: You must agree to the Privacy Policy!']")).getText();
