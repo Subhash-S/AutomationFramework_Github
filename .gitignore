@@ -1,1 +1,13 @@
-/target/
+# TestNG Reports
+test-output/
+
+# Maven target folder
+target/
+
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# macOS files
+.DS_Store
