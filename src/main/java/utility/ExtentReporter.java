@@ -12,7 +12,11 @@ public class ExtentReporter {
 		//it should generate report and share it with all the test cases/classes
 		
 		ExtentReports extentReport = new ExtentReports();
-		File extentReportPath = new File(System.getProperty("user.dir")+"\\test-output\\ExtentReport\\Report_"+Utility.timestamp()+".html");
+		//File extentReportPath = new File(System.getProperty("user.dir")+"\\test-output\\ExtentReport\\Report_"+Utility.timestamp()+".html");
+		String extentReportPath = System.getProperty("user.dir")+ "/test-output/ExtentReport/AutomationReport_" + Utility.timestamp() + ".html";
+		
+		//below code creates the folder if it doesn't exists (folder is created if missing)
+		new File(extentReportPath).getParentFile().mkdirs();
 		
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(extentReportPath);
 		sparkReporter.config().setTheme(Theme.DARK);
